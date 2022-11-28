@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 5px;
+}
+@media only screen and (max-width: 800px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        justify-content: baseline;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .menu-btn{
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url(./img/menu.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+    }
+    /*--------------------- Banner Mobile ----------------------*/
+    .home{
+        margin: 10px 0px 0px 0px;
+    }
+    section p:nth-child(1){
+        color: blue;
+    }
+    .banner{
+        border-radius: 5px;
+        width: 99%;
+        margin: 0px 3px 7px 0px;
+    }
+}

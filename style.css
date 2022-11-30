@@ -6,6 +6,32 @@ body {
     font-family: "Poppins", sans-serif;
     padding: 5px;
 }
+button{
+    border: none;
+    margin: 4px;
+    padding: 4px;    
+}
+/*-----------------------------------Style of service-------------------------------------*/
+.service .img-service{
+    border-radius: 11px;
+    width: 60px;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.service .img-service img{
+    width: 40px;
+}
+.img-service-0{
+    background-color: rgb(2, 86, 182);
+}
+.img-service-1{
+    background-color: rgb(8, 178, 93);
+}
+.img-service-2{
+    background-color: rgb(251, 60, 60);
+}
 @media only screen and (max-width: 800px) {
     header{
         display: flex;

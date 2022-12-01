@@ -22,16 +22,23 @@ h1{
     font-weight: 300;
 }
 h2{
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 300;
-}/*-----------Banner Style---------------*/
-section p, section h1, section h2{
-    padding: 0px 10px 5px 10px;
-    margin-left: 150px;
+}
+h1, h2, .form, .help{
+    margin-left: 170px;
+}
+.form{
+    border: solid red 1px;
+}
+/*-----------Banner Style---------------*/
+.home{
+    display: flex;
+    flex-direction: column;
 }
 .banner{
     border-radius: 5px;
-    width: 99%;
+    width: 100%;
     margin: 0px 3px 7px 0px;
 }
 /*-----------------------------------Style of service-------------------------------------*/
@@ -62,13 +69,13 @@ section p, section h1, section h2{
     width: 40px;
 }
 .img-service-0{
-    background-color: rgb(2, 86, 182);
+    background-color: #2d9cdb;
 }
 .img-service-1{
-    background-color: rgb(8, 178, 93);
+    background-color: #27ae60;
 }
 .img-service-2{
-    background-color: rgb(251, 60, 60);
+    background-color: #eb5757;
 }
 /*----------Project Style---------*/
 .project{

@@ -5,6 +5,7 @@
 body {
     font-family: "Poppins", sans-serif;
     padding: 0px 15px 0px 15px;
+    color: #333333;
 }
 button{
     border: none;
@@ -15,7 +16,10 @@ button{
 p{
     font-size: 18px;
     font-weight: 400;
+    font-style: normal;
     letter-spacing: 1.5;
+    line-height: 24px;
+    color: #333333;
 }
 h1{
     font-size: 48px;
@@ -29,9 +33,6 @@ h2{
 }
 h1, h2, .form, .help{
     margin-left: 170px;
-}
-.form{
-    border: solid red 1px;
 }
 /*-------------------Header----------*/
 header{
@@ -51,7 +52,7 @@ header nav ul li{
     margin: 0px 7px 0px 7px;
 }
 header nav ul li a{
-    color: #252525;
+    color: #000000;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -80,8 +81,39 @@ header nav ul li a{
     color: blue;
     margin: 44px 0px 10px 170px;
 }
-.title{
+.title, .help{
     margin: 10px 0px 40px 170px;
+}
+/*-------------Form Syle---------------*/
+.want{
+    font-size: 14px;
+}
+.form form{
+    width: 350px;
+    height: 43px;
+    padding: 7px 0px 7px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(237, 234, 234);
+    border-radius: 11px;
+}
+.form form input{
+    width: 75%;
+    height: 30px;
+    background-color: rgb(237, 234, 234);
+}
+.form form input, .join-btn{
+    border-radius: 11px;
+    font-size: 20px;
+    padding: 7px;
+    border: none;
+}
+.join-btn{
+    width: 30%;
+    height: 52px;
+    background-color: #2d9cdb;
+    
 }
 /*-----------------------------------Style of service-------------------------------------*/
 .services-general{

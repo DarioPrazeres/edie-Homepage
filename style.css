@@ -4,7 +4,7 @@
 }
 body {
     font-family: "Poppins", sans-serif;
-    padding: 5px;
+    padding: 0px 15px 0px 15px;
 }
 button{
     border: none;
@@ -14,12 +14,14 @@ button{
 /*--------------------Genearl Style-------------*/
 p{
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1.5;
 }
 h1{
     font-size: 48px;
-    font-weight: 300;
+    font-weight: 500;
+    line-height: 54px;
+    font-style: normal;
 }
 h2{
     font-size: 36px;
@@ -31,15 +33,55 @@ h1, h2, .form, .help{
 .form{
     border: solid red 1px;
 }
+/*-------------------Header----------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    justify-content: baseline;
+    align-items: center;
+    padding: 15px 3px 20px 3px;
+    margin: 10px 7px 20px 7px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    padding: 15px;
+    margin: 0px 7px 0px 7px;
+}
+header nav ul li a{
+    color: #252525;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-brand{
+    margin: 0px;
+    font-weight: 600;
+}
 /*-----------Banner Style---------------*/
 .home{
     display: flex;
     flex-direction: column;
 }
+.banner-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    margin: 2px 15px 2px 15px;
+}
 .banner{
-    border-radius: 5px;
+    border-radius: 11px;
     width: 100%;
-    margin: 0px 3px 7px 0px;
+}
+.question{
+    color: blue;
+    margin: 44px 0px 10px 170px;
+}
+.title{
+    margin: 10px 0px 40px 170px;
 }
 /*-----------------------------------Style of service-------------------------------------*/
 .services-general{
@@ -95,13 +137,6 @@ h1, h2, .form, .help{
 @media only screen and (max-width: 800px) {
     nav ul{
         display: none;
-    }
-    header{
-        display: flex;
-        justify-content: space-between;
-        justify-content: baseline;
-        align-items: center;
-        padding-bottom: 10px;
     }
     .menu-btn{
         border: none;

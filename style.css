@@ -31,6 +31,9 @@ h2{
     font-size: 36px;
     font-weight: 300;
 }
+h3{
+    font-size: 24px;
+}
 h1, h2, .form, .help{
     margin-left: 170px;
 }
@@ -115,26 +118,48 @@ header nav ul li a{
     background-color: #2d9cdb;
     
 }
-/*-----------------------------------Style of service-------------------------------------*/
+/*-----------------------Style service--------------------------------*/
+.services{
+    margin: 200px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+}
 .services-general{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 480px;
 }
 .service{
-    width: 350px;
+    width: 341px;
+    height: 422px;
     padding: 10px;
-    margin: 10px;
-    border: 1px solid red;
+    margin: 10px 45px 2px 45px;
 }
-.service *{
-    margin: 5px 5px 15px 5px;
+.services h2{
+    margin-bottom: 20px;
+}
+.service h3, .service p{
+    margin: 30px 4px 15px 4px;
+}
+.service p{
+    margin: 30px 4px 30px 4px;
+}
+.btn-started{
+    padding: 15px;
+    margin: 15px 0px 0px 4px;
+    width: 120px;
+    height: 50px;
+    border-radius: 11px;
+    font-size: 16px;
+
 }
 .service .img-service{
     border-radius: 11px;
-    
-    width: 60px;
-    height: 60px;
+    width: 67px;
+    height: 67px;
+    margin: 4px 4px 15px 4px;
     display:flex;
     align-items: center;
     justify-content: center;

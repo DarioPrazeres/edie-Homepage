@@ -119,6 +119,7 @@ header nav ul li a{
 /*-----------------------Style service--------------------------------*/
 .services{
     margin: 200px 0px 100px 0px;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -221,6 +222,7 @@ header nav ul li a{
 .team{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 15px 170px 10px 170px;
 }
@@ -255,8 +257,27 @@ header nav ul li a{
 .short{
     width: 85%;
 }
+/*----------------Depoiment----------------*/
 .depoiment{
-    margin: 15px 170px 10px 170px;
+    margin: 15px 170px 50px 170px;
+    padding: 15px 0px 5px 80px;
+}
+.depoiment h2{
+    margin: 0px 0px 15px 0px;
+}
+.perfil{
+    display: flex;
+}
+.photo-perfil{
+    width: 150px;
+    border-radius: 11px;
+}
+.disc{
+    margin-left: 7px;
+}
+.disc h3{
+    margin-top: 7px;
+    margin-bottom: 25px;
 }
 /*--------------Footer STyle--------------------*/
 footer{
@@ -307,7 +328,11 @@ footer a{
     text-decoration: none;
 }
 @media only screen and (max-width: 800px) {
-    nav ul{
+    header{
+        width: 100%;
+        display: flex;
+    }
+    header nav ul{
         display: none;
     }
     .menu-btn{
@@ -318,6 +343,36 @@ footer a{
         background-size: contain;
         width: 50px;
         height: 50px;
+    }
+    /*-----------Team Style-------------*/
+    .team{
+        width: 100%;
+        border: solid re;
+    }
+    /*--------------------Service Style--------------*/
+    .services-general{
+        height: auto;
+    }
+    /*--------Project Style---------------*/
+    .our-works{
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .project{
+        display:grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: repeat(1, auto);
+        gap: 5px;
+        margin: 0px 0px 0px 0px;
+    }
+    .project-0{
+        margin-bottom: 5px;
+    }
+    .project-1{
+        margin-top: 0px;
+    }
+    .project-3{
+        margin-top: 0px;
     }
     /*--------------------- Banner Mobile ----------------------*/
     .home{

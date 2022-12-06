@@ -129,7 +129,7 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 480px;
+    height: auto;
 }
 .service{
     width: 341px;
@@ -187,11 +187,11 @@ header nav ul li a{
     position: relative;
 }
 .project{
-    display:grid;
+    width: 100%;
+    display:flex;
+    justify-content: center;
     align-self: center;
-    grid-template-columns: repeat(2, 600px);
-    grid-template-rows: repeat(2, 700px);
-    gap: 10px;
+    flex-wrap: wrap;
     margin: 15px 170px 10px 170px;
 }
 .project img{
@@ -200,7 +200,7 @@ header nav ul li a{
     border-radius: 24px;
 }
 .project-0{
-    margin-bottom: 100px;
+    margin: 0px 50px 100px 0px;
 }
 .project-1{
     margin-top: 200px;
@@ -240,7 +240,11 @@ header nav ul li a{
 }
 .team-img{
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 45%);
+    gap: 10px;
+}
+.team-img img{
+    width: 100%;
 }
 .colum-1{
     margin-top: 100px;
@@ -264,6 +268,7 @@ header nav ul li a{
 }
 .depoiment h2{
     margin: 0px 0px 15px 0px;
+    width: 800px;
 }
 .perfil{
     display: flex;
@@ -328,6 +333,13 @@ footer a{
     text-decoration: none;
 }
 @media only screen and (max-width: 800px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    h2{
+        font-size: 30px;
+    }
     header{
         width: 100%;
         display: flex;
@@ -345,9 +357,13 @@ footer a{
         height: 50px;
     }
     /*-----------Team Style-------------*/
-    .team{
+    .team, .depoiment{
         width: 100%;
-        border: solid re;
+        margin: 0px 0px 0px 0px;
+        padding: 10px;
+    }
+    .team img{
+
     }
     /*--------------------Service Style--------------*/
     .services-general{
@@ -359,14 +375,17 @@ footer a{
         margin-bottom: 40px;
     }
     .project{
-        display:grid;
-        grid-template-columns: repeat(1, 90%);
-        grid-template-rows: repeat(1, auto);
-        gap: 5px;
-        margin: 0px 0px 0px 0px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    .project img{
+        width: 90%;
+        height: 90%;
+        border-radius: 24px;
     }
     .project-0{
-        margin-bottom: 5px;
+        margin:0px 0px 5px 0px;
     }
     .project-1{
         margin-top: 0px;

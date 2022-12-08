@@ -1,4 +1,4 @@
-*{
+q{
     margin: 0px;
     padding: 0px;
     border: solid 1px red;
@@ -34,17 +34,16 @@ h2{
 h3{
     font-size: 24px;
 }
-h1, h2, .form, .help{
-    margin-left: 170px;
-}
+
 /*-------------------Header----------*/
 header{
     display: flex;
-    justify-content: space-between;
-    justify-content: baseline;
+    justify-content: space-between
+    ;
     align-items: center;
+    width: 100%;
     padding: 15px 3px 20px 3px;
-    margin: 10px 7px 20px 7px;
+    margin: 10px 3px 20px 3px;
 }
 header nav ul{
     display: flex;
@@ -64,6 +63,7 @@ header nav ul li a{
     margin: 0px;
     font-weight: 600;
 }
+
 /*-----------Banner Style---------------*/
 .home{
     display: flex;
@@ -298,7 +298,6 @@ footer{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    border: solid 1px red;
     justify-content: space-around;
 }
 .widget-2{
@@ -337,21 +336,27 @@ footer p{
     margin-top: 20px;
     text-align: center;
 }
+.widget-3 .form{
+    margin-left: 0px;
+}
 footer a{
     color: rgb(154, 150, 150);
     text-decoration: none;
 }
 @media only screen and (max-width: 800px) {
-    *{
+    *, .title, .help, .question{
         margin: 0px;
         padding: 0px;
+    }
+    .title, .help, .question, .form{
+        padding-left: 10px;
     }
     h2{
         font-size: 30px;
     }
     header{
         width: 100%;
-        display: flex;
+        position: relative;
     }
     header nav ul{
         display: none;
@@ -367,19 +372,22 @@ footer a{
         background-size: contain;
         width: 50px;
         height: 50px;
+        position: absolute;
+        right: 10px;
+        top: 7px;
     }
     /*-----------Team Style-------------*/
     .team, .depoiment{
         width: 100%;
         margin: 0px 0px 0px 0px;
-        padding: 10px;
-    }
-    .team img{
-
     }
     /*--------------------Service Style--------------*/
     .services-general{
         height: auto;
+    }
+    .services{
+        margin: 50px 3px 300px 3px;
+        padding-left: 7px;
     }
     /*--------Project Style---------------*/
     .our-works{
@@ -418,7 +426,12 @@ footer a{
         margin: 0px 3px 7px 0px;
     }
     /*--------------Depoiment Style Mobile----------*/
+    .depoiment{
+        padding: 7px;
+        width: 95%;
+    }
     .depoiment h2{
         width: 90%;
     }
+    /*--------Form STyle Mobile -------------*/
 }

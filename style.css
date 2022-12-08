@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    border: solid 1px red;
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -187,7 +188,7 @@ header nav ul li a{
     position: relative;
 }
 .project{
-    width: 100%;
+    width: 90%;
     display:flex;
     justify-content: center;
     align-self: center;
@@ -295,16 +296,24 @@ footer{
     margin: 0px;
     padding: 0px 0px 20px 0px;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 1px red;
     justify-content: space-around;
 }
 .widget-2{
     display: flex;
+    width: 200px;
+    border: solid 1px rgb(143, 134, 134);
     flex-direction: column;
     justify-content: right;
 }
 .widget-2 h2{
     margin: 0;
     margin-bottom: 5px;
+}
+.widget-3 {
+    border: solid 1px rebeccapurple;
 }
 .widget-3 p{
     text-align: left;
@@ -346,6 +355,9 @@ footer a{
     }
     header nav ul{
         display: none;
+    }
+    section{
+        width: 100%;
     }
     .menu-btn{
         border: none;
@@ -404,5 +416,9 @@ footer a{
         border-radius: 5px;
         width: 99%;
         margin: 0px 3px 7px 0px;
+    }
+    /*--------------Depoiment Style Mobile----------*/
+    .depoiment h2{
+        width: 90%;
     }
 }

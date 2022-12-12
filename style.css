@@ -37,6 +37,9 @@ h3{
 }
 
 /*-------------------Header----------*/
+.mobile-menu{
+    display: none;
+}
 header{
     display: flex;
     justify-content: space-between
@@ -364,9 +367,30 @@ footer a{
     header{
         width: 100%;
         position: relative;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
     }
     header nav ul{
         display: none;
+    }
+    /*----------------Mobile Menu -----*/
+    .visible{
+        display: block;
+    }
+    .invisible{
+        display: none;
+    }
+    .mobile-menu{
+        padding: 3px 4px 10px 10px;
+        margin: 3px 4px 10px 10px;
+    }
+    .mobile-menu nav ul{
+        list-style: none;
+    }
+    .mobile-menu nav ul li a{
+        text-decoration: none;
+        color: #333333;
+        font-size: 18px;
     }
     section{
         width: 100%;
@@ -411,7 +435,6 @@ footer a{
         border-radius: 24px;
     }
     .project-0{
-        border: solid red 1px;
         margin:0px 0px 5px 0px;
     }
     .project-1{
@@ -441,4 +464,7 @@ footer a{
         width: 90%;
     }
     /*--------Form STyle Mobile -------------*/
+    .form form{
+        margin-left: 0px;
+    }
 }

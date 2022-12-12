@@ -1,7 +1,6 @@
-q{
+*{
     margin: 0px;
     padding: 0px;
-    border: solid 1px red;
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -35,7 +34,6 @@ h2{
 }
 h3{
     font-size: 24px;
-    padding-left: 4px;
 }
 
 /*-------------------Header----------*/
@@ -45,16 +43,16 @@ header{
     ;
     align-items: center;
     width: 100%;
-    padding: 15px 3px 20px 3px;
-    margin: 10px 3px 20px 3px;
+    padding: 15px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
 }
 header nav ul{
     display: flex;
     list-style: none;
 }
 header nav ul li{
-    padding: 15px;
-    margin: 0px 7px 0px 7px;
+    padding: 13px;
+    margin: 0px 4px 0px 4px;
 }
 header nav ul li a{
     color: #000000;
@@ -94,6 +92,9 @@ header nav ul li a{
 .want{
     font-size: 14px;
 }
+.want, .form form{
+    margin-left: 165px;
+}
 .form form{
     width: 350px;
     height: 43px;
@@ -103,6 +104,7 @@ header nav ul li a{
     justify-content: space-between;
     background-color: rgb(237, 234, 234);
     border-radius: 11px;
+    
 }
 .form form input{
     width: 75%;
